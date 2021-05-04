@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+  font-family: "Roboto Condesed" sans-serif;
+}
+
+root{
+  --primary-white:white;
+  --primary-orange:#f9ab00;
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +22,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.hr-style{
+  border: 5px dotted;
+  border-bottom: none;
+  margin-top: 0;
+  width: 300px;
 }
 
 .App-header {
@@ -36,3 +54,147 @@
     transform: rotate(360deg);
   }
 }
+
+/********************Navbar design************************/
+.logo{
+  width:16.25rem; 
+}
+
+/****************Nav Link***********************/
+nav{
+  z-index: 2;
+}
+nav a.nav-link{
+  font-weight: 100;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color:white !important;
+  float: left;
+  border-bottom: 0.1875rem solid #114e60;
+}
+
+.navbar-brand{
+  max-width: 16rem;
+  padding: 0 !important;
+  height: 4rem !important;
+}
+
+.navbar-nav > li > a.active , .navbar-nav > li >a.active:focus{
+  border-bottom: 0.1875rem solid red;
+  }
+  .navbar-nav > li >a:hover{
+    border-bottom: 0.1875rem solid #f4eee8;
+  }
+
+
+  /********************Navbar design end***********************/
+
+  /********************Header Design************************/
+  .header-wraper{
+    position: relative;
+    background:url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+  .main-info{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condesed" sans-serif;
+  }
+  .main-info h2{
+    color:white;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .typed-text{
+    color:#f4eee8;
+    font-size: 2rem;
+    position: relative;
+  }
+
+  .tsparticles-canvas-el{
+    position:absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  /***********about section*****************/
+  .profile-image > img{
+    padding: 3px;
+    border: 2px solid #114e60;
+    position:absolute;
+    height: 360px;
+    width: 320px;
+    margin-top: 20px;
+  }
+  .name{
+    border: 1px solid #114e60;
+  }
+  .name > h2{
+    margin-left: 380px;
+    
+  }
+  .name > p{
+    margin-top: 10px;
+    margin-left: 380px;
+    font-size: 14pt;
+  }
+  .cards{
+    margin-top: 100px;
+  }
+  #about{
+    padding: 70px; 
+    background-color: #f4eee8;
+  }
+  .project{
+    padding: 50px 10%;
+    padding-bottom: 100px;
+    background-color: #f4eee8 ;
+  }
+  .feature-col{
+    border: 1px solid #114e60;
+    background-color: #f5cebe;
+    border-radius: 5px;
+    padding:15px;
+    margin: 20px 0;
+    transition: .4s;
+  }
+  .feature-col:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px #114e60;
+  }
+  .icon-style{
+    background-color: #f4eee8 ;
+    color:#114e60;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  .contact-me{
+    padding-top: 20px;
+    padding-bottom: 90px;
+    background-color: #f4eee8;
+  }
+  .goto-top{
+    float: right !important;
+    color: #114e60;
+    margin-right: 30px;
+    margin-top: 50px;
+  }
